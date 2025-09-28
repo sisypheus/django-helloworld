@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y python3-dev python3-pip sqlite3 && pip 
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
-ENV ALLOWED_HOSTS=["*"]
 
 # Run migrations and then start the server
 CMD ["sh", "-c", "python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"]

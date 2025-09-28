@@ -3,4 +3,4 @@ from django.conf import settings
 
 def index(request):
     print(settings.ALLOWED_HOSTS)
-    return HttpResponse("Hello, world!\n")
+    return HttpResponse("Hello, world! 2\n")
